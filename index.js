@@ -20,16 +20,16 @@ if (program.args.length === 0) {
    process.exit(1);
 }
 
-var fs = require('fs');
-var parse = require('csv-parse');
-var path = require('path')
-var merge = require('lodash.merge');
-var objectPath = require('object-path');
-var glob = require('glob');
+let fs = require('fs');
+let parse = require('csv-parse');
+let path = require('path')
+let merge = require('lodash.merge');
+let objectPath = require('object-path');
+let glob = require('glob');
 
 const readOptions = (program.readEncoding ? { 'encoding': program.readEncoding } : null);
 const writeOptions = (program.writeEncoding ? { 'encoding': program.writeEncoding } : null);
-const parseOptions = { 'delimiter': program.fieldDelimiter || ',' };
+const parseOptions = { 'delimiter': program.fieldDelimiter || ',',  comment: '#', comment_no_infix: true, skip_empty_lines: true};
 
 let previousLangData = {};
 

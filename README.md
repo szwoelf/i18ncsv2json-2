@@ -10,6 +10,11 @@ key   | en         | de
 about | about here | etwa hier
 home  | homepage   | Startseite 
 
+Special CSV formatting:
+
+* Empty lines: will be skipped (since 0.9.6)
+* Lines starting with '#' are treated as comments and will be skipped, too. (since 0.9.6)
+
 Execute following command:
 
     i18ncsv2json-2 tools.csv

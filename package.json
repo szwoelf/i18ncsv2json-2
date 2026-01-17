@@ -1,6 +1,6 @@
 {
   "name": "i18ncsv2json-2",
-  "version": "0.9.5-SNAPSHOT.3",
+  "version": "0.9.6",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -16,7 +16,7 @@
     "object-path": "^0.11.8"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js test/translate_utf8.csv --merge -p test/i18n -f \";\""
   },
   "repository": {
     "type": "git",
